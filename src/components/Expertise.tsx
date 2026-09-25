@@ -48,33 +48,12 @@ function Expertise() {
         <h1>Expertise</h1>
         <div className="skills-grid">
           <div className="skill">
-            <FontAwesomeIcon icon={faReact} size="3x" />
-            <h3>Full Stack Web Development</h3>
-            <p>
-              I have built a diverse array of web applications from scratch
-              using modern technologies such as React and Flask. I have a strong
-              proficiency in the SDLC process and frontend + backend
-              development.
-            </p>
-            <div className="flex-chips">
-              <span className="chip-title">Tech stack:</span>
-              {labelsFirst.map((label, index) => (
-                <Chip key={index} className="chip" label={label} />
-              ))}
-            </div>
-          </div>
-
-          <div className="skill">
             <FontAwesomeIcon icon={faBrain} size="3x" />
-            <h3>Data Science and Machine Learning</h3>
+            <h3>Machine Learning</h3>
             <p>
               I transform raw data into business value by developing predictive
               machine learning models using advanced statistical analytics, and
-              scalable{" "}
-              <strong>
-                database architectures <FontAwesomeIcon icon={faDatabase} />
-              </strong>
-              .
+              scalable database architectures.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -86,16 +65,31 @@ function Expertise() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faPython} size="3x" />
-            <h3>GenAI & LLM</h3>
+            <h3>Artificial Intelligence</h3>
             <p>
               Stay relevant in the market by leveraging the latest AI models in
               your projects. I have professional experience building enterprise
-              grade GenAI-enabled solutions to empower intelligent decision
-              making.
+              grade AI-enabled solutions to empower intelligent decision making.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
               {labelsThird.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
+            </div>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faReact} size="3x" />
+            <h3>Full Stack Web Development</h3>
+            <p>
+              I have built a diverse array of web applications from scratch
+              using modern technologies such as React and Flask. I have a strong
+              proficiency in the SDLC process and frontend + backend
+              development.
+            </p>
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+              {labelsFirst.map((label, index) => (
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>
